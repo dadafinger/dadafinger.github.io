@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>플로트</title>
+  <style>
+  *{
+    box-sizing: border-box;
+  }
+  .wrapper{
+    width: 800px;
+    border: 5px solid red;
+    background-color: blue;
+    margin: 0 auto;
+  }
+  .wrapper::after{
+    content: '';
+    background-color: brown;
+    display: block;
+    clear: both;
+  }
+  .box1{
+    background: rgba(255,255,30,0.7);
+    float: left;
+    width: 500px;
+  }
+  .box2{
+    background: lime;
+    float: right;
+    width: 200px;
+    height: 50px;
+    /* position: relative;
+    top: 50px; */
+  }
+  .box3{
+    background: orange;
+    width: 80px;
+    float: right;
+    height: 70px;
+  }
+  .box4{
+    background: pink;
+    float: right;
+  }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+  </div>
+</body>
+</html>

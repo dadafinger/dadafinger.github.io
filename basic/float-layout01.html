@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>플로트를 이용한 레이아웃 01</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .header,
+    .wrapper,
+    .footer {
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* 헤더 */
+    .bg-header {
+      background-color: yellow;
+
+    }
+
+    .header {
+      min-height: 15vh;
+    }
+
+    /* 내비게이션과 메인콘텐츠의 컨테이너 */
+    .wrapper {
+      overflow: hidden;
+    }
+
+    /* 내비게이션 */
+    .navigation {
+      background-color: pink;
+      min-height: 70vh;
+      width: 300px;
+      float: left;
+    }
+
+    /* 메인 콘텐츠 */
+    .main {
+      background-color: skyblue;
+      min-height: 70vh;
+      width: 700px;
+      float: left;
+    }
+
+    /* 푸터 */
+    .bg-footer{
+      background-color: orange;
+    }
+    .footer {
+      min-height: 15vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-header">
+    <!-- 헤더 시작 -->
+    <header class="header">헤더</header>
+    <!-- 헤더 종료 -->
+  </div>
+  <div class="wrapper">
+    <!-- 내비게이션 시작 -->
+    <nav class="navigation">내비게이션</nav>
+    <!-- 내비게이션 종료 -->
+    <!-- 메인 콘텐츠 시작 -->
+    <main class="main">메인 콘텐츠</main>
+    <!-- 메인 콘텐츠 종료 -->
+  </div>
+  <div class="bg-footer">
+    <!-- 푸터 시작 -->
+    <footer class="footer">푸터</footer>
+    <!-- 푸터 종료 -->
+  </div>
+</body>
+
+</html>
