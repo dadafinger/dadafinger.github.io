@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>플렉스 박스</title>
+  <style>
+  .wrapper{
+    background-color: gray;
+    border: 10px dotted black;
+    width: 1000px;
+    min-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  .wrapper > div{
+    width: 400px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .wrapper > div:nth-child(-n+2){
+    margin-top: 20px;
+  }
+  .group1{
+    background-color: yellow;
+  }
+  .group2{
+    background-color: pink;
+  }
+  .group3{
+    background-color: lime;
+  }
+  .group4{
+    background-color: aqua;
+  }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="group1">박스1</div>
+    <div class="group2">박스2</div>
+    <div class="group3">박스3</div>
+    <div class="group4">박스4</div>
+  </div>
+</body>
+</html>

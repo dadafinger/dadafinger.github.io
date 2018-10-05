@@ -1,0 +1,81 @@
+@charset 'utf-8';
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-color: silver;
+}
+.container{
+  background-color: gray;
+}
+.header{
+  background-color: yellow;
+}
+.main{
+  background-color: skyblue;
+}
+.card{
+  background-color: white;
+}
+.card-img{
+  background: pink;
+}
+.card-content{
+  background-color: orange;
+}
+.footer{
+  background-color: lime;
+}
+/* All Device & Mobile Device */
+.rwd{
+  max-width: 100%;
+  height: auto;
+}
+.block{
+  display: block;
+}
+.text-1{
+  font-size: 48px;
+  color: #333;
+  margin: 20px 0;
+}
+.text-2{
+  font-size: 36px;
+  color: #666;
+  margin: 20px 0;
+}
+.text-3{
+  font-size: 24px;
+  color: #f33;
+  margin: 20px 0;
+}
+.header{
+  padding: 50px 20px;
+}
+.wrapper{
+  padding: 0 40px;
+}
+.main{
+  min-height: 70vh;
+}
+.card{
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+}
+.card-img{
+  width: 20%;
+  margin-right: 20px;
+}
+.card-content{
+  padding-top: 20px;
+}
+.footer{
+  padding: 50px 0 20px;
+}
+
+
+
+/* Desktop Device */

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>플렉스 레이아웃</title>
+  <style>
+    *, *::before, *::after{
+      box-sizing: border-box;
+    }
+    body{
+      margin: 0;
+    }
+    .wrapper{
+      background-color: gray;
+    }
+    .header{
+      background-color: yellow;
+      min-height: 15vh;
+    }
+    .container{
+      background-color: lime;
+      display: flex;
+    }
+    .navigation{
+      background-color: pink;
+      min-height: 70vh;
+      width: 20%;
+    }
+    .main{
+      background-color: aqua;
+      min-height: 70vh;
+      width: 60%;
+    }
+    .sidebar{
+      background-color: orange;
+      min-height: 70vh;
+      width: 20%;
+    }
+    .footer{
+      background-color: tomato;
+      min-height: 15vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">헤더</div>
+    <div class="container">
+      <div class="navigation">내비게이션</div>
+      <div class="main">메인 콘텐츠</div>
+      <div class="sidebar">사이드바</div>
+    </div>
+    <div class="footer">푸터</div>
+  </div>
+</body>
+</html>
