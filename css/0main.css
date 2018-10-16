@@ -1,83 +1,131 @@
 @charset 'UTF-8';
 
 /* mobile device */
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body{
-  background-color:yellow;
+body {
+  background-color: yellow;
   margin: 0;
- }
+  display: flex;
+}
+h2 {
+  font-size: 10em;
+}
+p {
+   font-size:10em;
+}
 /* style resource */
-.rwd{
+.rwd {
+  max-width: 100%;
+  /* max-height: vh; */
+}
+.block {
   display: block;
 }
 
- /* header start */
-.gnb{
-  background-color: skyblue;
+/* body start */
+.container{
+  position: relative;
 }
-.header{
+
+/* header start */
+.gnb {
+  background-color: skyblue;
+  box-shadow : 5px 5px 5px 5px rgba(0, 0, 0, 0.5) ;
+  padding: 8px;
+}
+.header {
   font-size: 46px;
   color: #111;
-  margin: 20px;
+  margin: 8px;
 }
-.work{
-  color: #fff;
+.btn_container {
+  display: flex;
+  justify-content: flex-end;
 }
-.about{
+.work {
   color: #fff;
+  margin: 0 16px;
+}
+.about {
+  color: #fff;
+  margin: 0 16px;
 }
 /* header end */
 
 /* main start */
-.wrapper{
-  background-color: #fff;
+.wrapper {
+  /* main */
+  display: flex;
+  flex-direction: column;
 }
 /* intro start */
-.intro{
-background-color: green;
+.intro {
+  background-color: green;
+  /* position: relative; */
 }
-.intro_context{
-  background-color: lime;
+.intro_context {
+  color: #225;
 }
 /* intro end */
 
-.divider{
+.divider {
   background-color: #faf;
+  position: relative;
+  height: 100px;
+}
+.divider_context {
+  justify-items: flex-end;
+  position: absolute;
+  bottom: 8px;
+  right: 20px;       
 }
 /* list start */
-.card1{
- background-color:#fff;
-padding: 16px;
+.card {
+  background-color: greenyellow;
+  min-width: 240px;
+  /* max-width: 30vh;  */
+  margin: 16px;
 }
-.card1_img{
- background-color: lime;
+.card1_img {
+  background-color: rgb(166, 64, 255);
 }
-.text1{
+.text-1 {
   background-color: pink;
+  padding: 8px 0 4px 0;
 }
-.text2{
- background-color: red;
+.text-2 {
+  background-color: red;
 }
 /* card end */
 
 /* footer start */
-.footer{
+.footer {
   background-color: blue;
+  position: fixed absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
 }
-.copyright{
-  background-color: #77f;
+.copyright {
+  position: fixed;
+  bottom: 8px;
+  left: 20px;
+  width: 100%;
 }
-.youtube{
-  background-color:#ccf;
+.youtube {
+  background-color: #ccf;
 }
-.instagram{
-  background-color:  #aaf;
+.instagram {
+  background-color: #aaf;
 }
-.mail{
+.mail {
   background-color: #55f;
 }
 /* footer end */

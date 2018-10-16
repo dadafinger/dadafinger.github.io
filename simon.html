@@ -9,15 +9,34 @@
 </head>
 <body>
   <div class="container">
-    <div class="header">Header</div>
+    <div class="header">
+      <h1 class="braning">
+        <!-- a-tag안에 title :link설명  -->
+        <a href="index.html" title="Simon Pan's Portfolio Site Home">
+          <!-- alt:이미지 대체정보: img보다 먼저 loading 가능하다. -->
+          <img class="rwd" src="img/sp-logo.png" alt="simaon pan">
+        </a>
+      </h1>
+      <p class="header-content">
+        Simon Pan is a Product Designer based in San Francisco.
+      </p>
+      <nav class="navigation">
+        <ul class="main-menu noto">
+          <!-- agent 기본 스타일 -->
+          <li><a href="index.html" class="active">potfolio</a></li>
+          <li><a href="">writing</a></li>
+          <li><a href="">about</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="wrapper">
       <div class="main">
-        <div class="card">
+        <div class="card b-shadow">
           <div class="card-img">
             <img class="rwd block" src="img/uber.jpg" alt="Uber">
           </div>
           <div class="card-content">
-            <h2 class="text-1">Uber Magic 2.0</h2>
+            <h2 class="text-1 noto t-shadow" >Uber Magic 2.0</h2>
             <p class="text-2">Perfecting the pickup for the Rider app redesign.</p>
             <a href="#" class="text-3">Read More</a>
           </div>
@@ -27,13 +46,28 @@
             <img class="rwd block" src="img/amazon.jpg" alt="Amazon">
           </div>
           <div class="card-content">
-            <h2 class="text-1">Uber Magic 2.0</h2>
+            <h2 class="text-1 noto" >Amazon Prime Music</h2>
             <p class="text-2">Perfecting the pickup for the Rider app redesign. </p>
             <a href="#" class="text-3">Read More</a>
           </div>
         </div>
       </div>
-      <div class="footer">Footer</div>
+      <div class="footer">
+        <ul class="contact">
+          <!-- link 새탭으로 링크열기 -->
+          <li><a href="mailto:seulbinim@gmail.com" target="_blank">
+            simonpan@mail.me
+          </a></li>
+          <li class="dot"><a href="tel:1024356789" target="_blank">&hearts;010-23936-5678</a></li>
+          <li class="dot"><a href="http://Instagram.com/masitgae" target="_blank">Instagram</a></li>
+          <li class="dot"><a href="https://www.linkedin.com/in/spanux/" target="_blank">LinkedIn</a></li>
+          <li class="dot"><a href="" target="_blank">Pinterest</a></li>
+        </ul>
+        <small class="copyright">
+          Website design &nbsp;&nbsp;&nbsp;and content © 2018 Simon Pan.
+        </small>
+        <!-- &lt;=< &gti;=> -->
+      </div>
     </div>
   </div>
 </body>
